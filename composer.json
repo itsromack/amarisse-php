@@ -1,0 +1,12 @@
+{
+    "name": "uplb/raw-php-crud",
+    "description": "Basic CRUD in PHP",
+    "type": "project",
+    "require": {},
+    "autoload": {
+        "psr-0": {
+	    "Raw": "src"
+         }
+    }
+
+}
