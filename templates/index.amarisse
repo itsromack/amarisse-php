@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World</title>
+</head>
+<body>
+    <h1><?php echo $greetings; ?></h1>
+    <p><?php echo $message; ?></p>
+</body>
+</html>
