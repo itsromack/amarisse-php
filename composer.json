@@ -4,9 +4,8 @@
     "type": "project",
     "require": {},
     "autoload": {
-        "psr-0": {
-	    "Raw": "src"
+        "psr-4": {
+            "Raw\\": "src/"
          }
     }
-
 }
