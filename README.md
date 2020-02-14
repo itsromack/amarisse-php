@@ -1,3 +1,12 @@
+# Amarisse PHP
+Mini-framework in plain PHP
+
+# Basic Functions
+* Controllers
+* Template Parser
+* Model
+* Database Handler
+
 # Installation Notes
 
 Run `composer install`

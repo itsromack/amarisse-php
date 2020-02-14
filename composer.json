@@ -1,6 +1,6 @@
 {
-    "name": "amarisse/raw-php-crud",
-    "description": "Basic CRUD in PHP",
+    "name": "itsromack/amarisse-php",
+    "description": "AmarissePHP",
     "type": "project",
     "require": {},
     "autoload": {
