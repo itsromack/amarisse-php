@@ -18,6 +18,9 @@ class URLParser
         $uri = $_SERVER['REQUEST_URI'];
         if (strlen($uri) > 1) {
             $controller = self::getStringBetweenSlashes($uri);
+            if (!empty($controller)) {
+                $controller = ucfirst($controller);
+            }
             $method = self::getStringBetweenSlashes(substr($uri, strlen($controller) + 1));
             if (empty($method)) {
                 $method = self::DEFAULT_METHOD;

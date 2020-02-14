@@ -27,4 +27,22 @@ class IndexController extends BaseController
             )
         );
     }
+
+    public function demo_form()
+    {
+        return Template::render('templates/form.amarisse');
+    }
+
+    public function demo_save_form()
+    {
+        if (!empty($_POST))
+        {
+            if (isset($_POST['email']) && !empty($_POST['email']))
+            {
+                return Template::render('templates/thankyou.amarisse', compact('email'));
+            }
+        }
+
+        return Template::render('templates/thankyou.amarisse');
+    }
 }

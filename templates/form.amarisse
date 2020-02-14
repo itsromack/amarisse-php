@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Form</title>
+</head>
+<body>
+    <h1>Subscription Form</h1>
+    <form action="/index/demo_save_form" method="POST">
+        Email: <input type="email" name="email" placeholder="email@domain.com" size="30">
+        <br>
+        <input type="submit" value="Subscribe">
+    </form>
+</body>
+</html>

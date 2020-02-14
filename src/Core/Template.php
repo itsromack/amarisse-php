@@ -8,7 +8,7 @@ class Template
      * @param String $template_file
      * @param Array $params
      */
-    public static function render($template_file, $params)
+    public static function render($template_file, $params = [])
     {
         return self::applyParamsToTemplate('self::display', $template_file, $params);
     }
@@ -17,7 +17,7 @@ class Template
      * @param String $template_file
      * @param Array $params
      */
-    public static function display($template_file, $params)
+    public static function display($template_file, $params =[])
     {
         extract($params);
         include $template_file;

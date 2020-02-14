@@ -10,9 +10,7 @@ $db_config = include('config/database.php');
 $db = DatabaseFactory::getInstance('mysql', $db_config['database']['mysql']);
 
 $route_info = URLParser::parse();
-// echo '<pre>';
-// print_r($route_info);
-// print_r($route_info['controller']);
+
 
 $controller = "Raw\\Controllers\\".$route_info['controller'];
 $method = $route_info['method'];

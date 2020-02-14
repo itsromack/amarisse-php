@@ -6,10 +6,17 @@
 <body>
     <h1><?php echo $greetings; ?></h1>
     <p><?php echo $message; ?></p>
+    <h3>Bato Bato Pik</h3>
     <ul>
     <?php foreach ($my_list as $item): ?>
     <li><?php echo $item ?></li>
     <?php endforeach ?>
+    </ul>
+    <h3>Form Sample</h3>
+    <ul>
+        <li>
+            <a href="/index/demo_form">Email Subcription Form</a>
+        </li>
     </ul>
 </body>
 </html>
