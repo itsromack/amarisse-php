@@ -1,5 +1,5 @@
 {
-    "name": "uplb/raw-php-crud",
+    "name": "amarisse/raw-php-crud",
     "description": "Basic CRUD in PHP",
     "type": "project",
     "require": {},
