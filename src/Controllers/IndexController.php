@@ -19,7 +19,7 @@ class IndexController extends BaseController
             'dinosaur'
         ];
 
-        return Template::render('templates/index.amarisse',
+        return Template::render('demo/index.amarisse',
             compact(
                 'greetings',
                 'message',
@@ -30,19 +30,18 @@ class IndexController extends BaseController
 
     public function demo_form()
     {
-        return Template::render('templates/form.amarisse');
+        return Template::render('demo/form.amarisse');
     }
 
     public function demo_save_form()
     {
-        if (!empty($_POST))
+        $email = $this->post('email');
+
+        if (!empty($email))
         {
-            if (isset($_POST['email']) && !empty($_POST['email']))
-            {
-                return Template::render('templates/thankyou.amarisse', compact('email'));
-            }
+            return Template::render('demo/thankyou.amarisse', compact('email'));
         }
 
-        return Template::render('templates/thankyou.amarisse');
+        return Template::render('demo/thankyou.amarisse');
     }
 }

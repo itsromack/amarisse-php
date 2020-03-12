@@ -15,7 +15,10 @@
     <h3>Form Sample</h3>
     <ul>
         <li>
-            <a href="/index/demo_form">Email Subcription Form</a>
+            <a href="/index/demo_form">Email Subcription Form</a> (Simple Form Handling)
+        </li>
+        <li>
+            <a href="/registration">User Registration Form</a> (Saves to Database)
         </li>
     </ul>
 </body>

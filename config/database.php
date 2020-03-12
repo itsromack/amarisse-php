@@ -4,9 +4,10 @@ return [
     'database' => [
         'mysql' => [
             'host' => '127.0.0.1',
-            'name' => 'dbproject',
+            'port' => 8809,
+            'name' => 'uplb_db',
             'user' => 'root',
-            'pass' => 'secret123'
+            'pass' => 'root'
         ]
     ]
 ];

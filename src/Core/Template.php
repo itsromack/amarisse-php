@@ -10,7 +10,7 @@ class Template
      */
     public static function render($template_file, $params = [])
     {
-        return self::applyParamsToTemplate('self::display', $template_file, $params);
+        return self::applyParamsToTemplate('self::display', 'templates/' . $template_file, $params);
     }
 
     /**

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <h3>User Registration</h3>
+    <form action="/registration/register" method="POST" id="registration-form">
+        <table>
+            <tr>
+                <td>Username</td>
+                <td>
+                    <input type="text" name="username" placeholder="username" size="30" id="username">
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" name="password" placeholder="********" size="30" id="password">
+                </td>
+            </tr>
+            <tr>
+                <td>Confirm</td>
+                <td>
+                    <input type="password" name="confirm_password" placeholder="********" size="30" id="confirm">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right">
+                    <input type="button" value="Register" id="register-button">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+<script type="text/javascript">
+(function(){
+
+    function submitForm() {
+        document.querySelector('#registration-form').submit();
+    }
+
+    function handleRegistration() {
+        var username = document.querySelector('#username').value;
+        var passwd = document.querySelector('#password').value;
+        var confirm = document.querySelector('#confirm').value;
+        if (username === '') {
+            console.log('Empty username');
+            return false;
+        }
+        if (passwd === '') {
+            console.log('Empty password');
+            return false;
+        }
+        if (passwd !== confirm) {
+            console.log('Passwords does not match');
+            return false;
+        }
+        submitForm();
+    }
+
+    document.querySelector('#register-button').addEventListener('click', handleRegistration);
+})();
+</script>
+</html>

@@ -4,5 +4,5 @@ namespace Raw\Data;
 
 interface DatabaseInterface
 {
-    public function connect($config);
+    public function connect();
 }
